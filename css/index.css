@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300&display=swap');
+
+
+body{
+    margin: 0;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #0087ff;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+}
+.nav_link a, .btn_contact{
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+}
+.navbar_list{
+    display: flex;
+    list-style: none;
+    flex-wrap: wrap;
+}
+.nav_link a{
+    font-size: 18px;
+    color: #ffffff;
+}
+.nav_link_2, .nav_link_3{
+    padding-left: 4em;
+}
+.btn_contact button{
+    font-weight: 700;
+    font-size: 15px;
+    margin-right: 3.5em;
+    background-color: white;
+    border: 3px solid #94c8f7;
+    border-radius: 30px;
+    padding-left: 3em;
+    padding-right: 3em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
