@@ -9,10 +9,10 @@ body{
     justify-content: space-between;
     align-items: center;
     background-color: #0087ff;
-    padding-top: 0.5em;
-    padding-bottom: 0.5em;
+    padding-top: 0.3em;
+    padding-bottom: 0.3em;
 }
-.nav_link a, .btn_contact{
+.nav_link a, .btn_contact, .home{
     font-family: 'Poppins', sans-serif;
     text-decoration: none;
 }
@@ -25,7 +25,7 @@ body{
     font-size: 18px;
     color: #ffffff;
 }
-.nav_link_2, .nav_link_3{
+.nav_link_2, .nav_link_3, .nav_link_4{
     padding-left: 4em;
 }
 .btn_contact button{
@@ -35,8 +35,13 @@ body{
     background-color: white;
     border: 3px solid #94c8f7;
     border-radius: 30px;
-    padding-left: 3em;
-    padding-right: 3em;
-    padding-top: 1em;
-    padding-bottom: 1em;
+    padding: 1em 3em 1em 3em;
+}
+.home{
+    display: flex;
+    flex-direction: column;
+}
+.home h1{
+    margin: 5em 1.5em 5em 1.5em;
+    color: #0087ff;
 }
