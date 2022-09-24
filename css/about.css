@@ -5,21 +5,25 @@
 }
 .content-container{
     margin-top: 8em;
+    margin-left: 8em;
+    margin-right: 8em;
 }
 .title{
     text-align: center;
 }
-.about_btn{
-    margin: 0em 25em 0em 25em;
+.about{
+    font-size: 16px;
 }
-.about_btn button{
+.skills_btn{
+    margin: 0em 30em 0em 30em;
+}
+.skills_btn button{
     color: white;
     background: linear-gradient(45deg, #5050FF, #5090FF);
     border: 3px solid #62b6ff;
     border-radius: 30px;
     padding: .9em 3.5em .9em 3.5em;
 }
-
-.about_btn button:hover{
+.skills_btn button:hover{
     background: linear-gradient(90deg, #5090FF, #5050FF);
 }

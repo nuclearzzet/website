@@ -1,3 +1,7 @@
+h1{
+    color: #0087ff;
+}
+
 .form_container{
     margin-top: 4em;
     display: flex;
@@ -6,15 +10,17 @@
 }
 
 .inputs_container{
+    background-color: #ffffff;
     padding: 0em 10em 2em 10em;
     border: .3em solid #0087ff;
-    border-radius: 4em;
+    border-radius: 2em;
     box-shadow: 2.5em 1.5em 1.5em grey;
 }
 
-.form_input{
+.form_input, .form_input_submit{
     margin-top: 1em;
-    border: .14em solid rgb(0, 0, 0);
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: .5em;    
 }
 
 .form_input_1, .form_input_2, .form_input_3{
@@ -33,5 +39,5 @@
 }
 
 .submit_btn:hover{
-    background-color: #0051ff;
+    background-color: rgb(0, 81, 255);
 }
