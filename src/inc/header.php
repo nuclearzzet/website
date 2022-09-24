@@ -1,4 +1,4 @@
-
+<?php htmlspecialchars( include 'src/config/database.php'); ?>
 
 <!DOCTYPE html>
 <html lang="en">
