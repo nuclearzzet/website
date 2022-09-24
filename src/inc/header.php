@@ -1,3 +1,5 @@
+<?php session_start(); ?>
+
 <?php htmlspecialchars(include 'src/config/database.php'); ?>
 
 <!DOCTYPE html>
