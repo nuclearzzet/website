@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300&display=swap');
+
+/* HTML ELEMENTS*/
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+h1, a, label, input, textarea{
+    font-family: 'Lato', sans-serif;
+    text-decoration: none;
+}
+
+/* Navbar */
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #0087ff;
+    padding-top: 0.3em;
+    padding-bottom: 0.3em;
+    position: relative;
+}
+
+.nav_link_2, .nav_link_3, .nav_link_4{
+    padding-left: 4em;
+}
+
+.navbar_list{
+    display: flex;
+    list-style: none;
+    flex-wrap: wrap;
+}
+.nav_link a{
+    font-size: 18px;
+    color: #ffffff;
+}
+
+.nav_link a:hover{
+    font-size: 20px;
+    text-decoration: underline;
+}
+
+.btn_contact button{
+    font-weight: 700;
+    font-size: 15px;
+    margin-right: 3.5em;
+    background-color: #ffffff;
+    border: 3px solid #62b6ff;
+    border-radius: 30px;
+    padding: .9em 3.5em .9em 3.5em;
+}
+
+.btn_contact:hover button{
+    background-color: #0087ff;
+    color: #ffffff;
+}

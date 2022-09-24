@@ -1,12 +1,11 @@
 <?php htmlspecialchars(include 'src/inc/header.php'); ?>
 
 <head>
-    <style>
-        <?php htmlspecialchars(include 'css/index.css') ?>
-    </style>
+    <title>Home</title>
+    <style> <?php htmlspecialchars(include 'css/index.css'); ?> </style>
 </head>
 
-<main>
+<main class="application_main">
     
 </main>
 

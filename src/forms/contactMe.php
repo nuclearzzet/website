@@ -11,7 +11,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST'){
         if (!empty($name)){
             if (!empty($title)){
                 if (!empty($body)){
-                    header('LOCATION: /personal_website/index');
+                    header('LOCATION: /personal_website/index.php');
                 }else{
                     $message =  "Message cannot be empty";
                 }
