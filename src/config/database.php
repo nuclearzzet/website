@@ -13,7 +13,7 @@ class Database{
         try{
 
             $this->conn = new mysqli($this->host, $this->user, $this->pass, $this->name);
-            return true;
+            return $this->conn;
         }catch(error_get_last $err){
             echo 'Connection_failed ' . $err->getMessage();
             return false;
