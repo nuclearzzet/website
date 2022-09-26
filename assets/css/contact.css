@@ -14,12 +14,17 @@ h1{
     padding: 0em 10em 2em 10em;
     border: .3em solid #0087ff;
     border-radius: 2em;
-    box-shadow: 2em .5em .5em #777;
+    box-shadow: 2em .5em .5em #888;
 }
-
+.form_input{
+    border: 0;
+    border-bottom: 1.5px solid #0087ff;
+}
+.form_input:hover{
+    border-bottom: 3px solid #0087ff;
+}
 .form_input, .form_input_submit{
     margin-top: 1em;
-    border: 1px solid rgb(0, 0, 0);
     border-radius: .5em; 
 }
 
@@ -31,7 +36,9 @@ h1{
 .form_input_4{
     resize: none;
 }
-
+.form_input_submit{
+    border: 0;
+}
 .submit_btn{
     padding: .6em 15.1em .6em 15.1em;
     background-color: #0087ff;
