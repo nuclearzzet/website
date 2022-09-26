@@ -1,8 +1,8 @@
-<?php include 'src/inc/header.php' ?>
+<?php include 'inc/header.php' ?>
 
 <head>
     <title>About</title>
-    <style><?php include 'css/about.css'; ?></style>
+    <style><?php include 'assets/css/about.css'; ?></style>
 </head>
 
 <main>
@@ -25,4 +25,4 @@
     </div>
 </main>
 
-<?php include 'src/inc/footer.php' ?>
+<?php include 'inc/footer.php' ?>

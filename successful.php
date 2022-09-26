@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Successful</title>
     <style>
-        <?php include 'css/successful.css' ?>
+        <?php include 'assets/css/successful.css' ?>
     </style>
 </head>
 <body>

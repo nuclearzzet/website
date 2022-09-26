@@ -1,8 +1,8 @@
-<?php include 'src/inc/header.php' ?>
+<?php include 'inc/header.php' ?>
 
 <head>
     <title>Projects</title>
-    <style><?php include 'css/projects.css' ?></style>
+    <style><?php include 'assets/css/projects.css' ?></style>
 </head>
 
 <main>
@@ -15,4 +15,4 @@
     </div>
 </main>
 
-<?php include 'src/inc/footer.php' ?>
+<?php include 'inc/footer.php' ?>

@@ -1,7 +1,5 @@
 <?php session_start(); ?>
 
-<?php htmlspecialchars(include 'src/config/database.php'); ?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style> <?php htmlspecialchars(include 'css/header.css') ?> </style>
+    <style> <?php include 'assets/css/header.css' ?> </style>
 </head>
 <body>
     <header>

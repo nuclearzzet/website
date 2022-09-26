@@ -4,39 +4,21 @@ class Database{
     
     private $host = 'localhost';
     private $user = 'personal_website';
-    private $password = 'password*123';
+    private $pass = 'personal_website*779';
     private $name = 'personal_website';
 
     private $conn;
 
     public function connect(){
-        $this->conn = null;
-
         try{
-            $this->conn = new PDO('mysql:host= ' . $this->host . ';dbname= ' . $this->name, $this->username, $this->password);
-            $this->conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-        }catch(PDOException $err){
-            echo "Connection Failed: " . $err->getMessage();
+
+            $this->conn = new mysqli($this->host, $this->user, $this->pass, $this->name);
+            return true;
+        }catch(error_get_last $err){
+            echo 'Connection_failed ' . $err->getMessage();
+            return false;
         }
 
-        return $this->conn;
     }
 
-    // Getters
-
-    public function getHost(){
-        return $this->host;
-    }
-
-    public function getName(){
-        return $this->name;
-    }
-
-    public function getUser(){
-        return $this->user;
-    }
-
-    public function getPassword(){
-        return $this->password;
-    }
 }

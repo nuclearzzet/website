@@ -1,8 +1,8 @@
-<?php htmlspecialchars(include 'src/inc/header.php'); ?>
+<?php include 'inc/header.php' ?>
 
 <head>
     <title>Contact Me</title>
-    <style> <?php htmlspecialchars(include 'css/contact.css') ?></style>
+    <style> <?php include 'assets/css/contact.css' ?></style>
 </head>
 
 <main>
@@ -26,4 +26,4 @@
     </div>
 <main>
 
-<?php htmlspecialchars(include 'src/inc/footer.php') ?>
+<?php include 'inc/footer.php' ?>

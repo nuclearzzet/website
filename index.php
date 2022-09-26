@@ -1,8 +1,8 @@
-<?php htmlspecialchars(include 'src/inc/header.php'); ?>
+<?php include 'inc/header.php'; ?>
 
 <head>
     <title>Home</title>
-    <style> <?php htmlspecialchars(include 'css/index.css'); ?> </style>
+    <style> <?php include 'assets/css/index.css' ?> </style>
 </head>
 
 <main>
@@ -17,5 +17,5 @@
     </div>
 </main>
 
-<?php htmlspecialchars(include 'src/inc/footer.php'); ?>
+<?php include 'inc/footer.php' ?>
  

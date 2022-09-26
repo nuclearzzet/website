@@ -2,7 +2,7 @@
 
 ## Tools & Languages Used
 
-PHP
-JS
-CSS
-HTML
+- PHP
+- JS
+- CSS
+- HTML
