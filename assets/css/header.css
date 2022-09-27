@@ -1,21 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
-
 /* HTML ELEMENTS*/
-
 body{
     margin: 0;
     padding: 0;
     background-color: rgb(255, 250, 250);
 }
-
 h1, a, input, textarea, p, button{
     font-family: 'Montserrat', sans-serif;
     text-decoration: none;
 }
 
 /* Navbar */
-
 .navbar{
     display: flex;
     justify-content: space-between;
@@ -25,26 +21,22 @@ h1, a, input, textarea, p, button{
     padding-bottom: 0.3em;
     position: relative;
 }
-
-.nav_link_2, .nav_link_3, .nav_link_4{
-    padding-left: 4em;
-}
-
 .navbar_list{
     display: flex;
     list-style: none;
     flex-wrap: wrap;
 }
+.nav_link_2, .nav_link_3, .nav_link_4{
+    padding-left: 4em;
+}
 .nav_link a{
     font-size: 18px;
     color: #ffffff;
 }
-
 .nav_link a:hover{
     font-size: 20px;
     text-decoration: underline;
 }
-
 .btn_contact button{
     font-weight: 700;
     font-size: 15px;
@@ -54,7 +46,6 @@ h1, a, input, textarea, p, button{
     border-radius: 30px;
     padding: .9em 3.5em .9em 3.5em;
 }
-
 .btn_contact button:hover{
     background: linear-gradient(75deg, #5050FF, #5090FF);
     color: #ffffff;

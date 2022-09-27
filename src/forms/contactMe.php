@@ -3,37 +3,42 @@
 session_start();
 
 include '../config/database.php'; 
-$conn = new Database();
-$db = $conn->connect();
+$db = new Database();
+$conn = $db->connect();
 
 if($conn){
     echo "Connected";
 }
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST'){
-    $name = htmlentities(filter_input(INPUT_POST, 'name', FILTER_UNSAFE_RAW), ENT_QUOTES);
-    $email = htmlentities(filter_input(INPUT_POST, 'email', FILTER_UNSAFE_RAW), ENT_QUOTES);
-    $title = htmlentities(filter_input(INPUT_POST, 'title', FILTER_UNSAFE_RAW), ENT_QUOTES);
-    $body = htmlentities(filter_input(INPUT_POST, 'body', FILTER_UNSAFE_RAW), ENT_QUOTES);
+    $name = htmlspecialchars(filter_input(INPUT_POST, 'name', FILTER_UNSAFE_RAW), ENT_QUOTES | ENT_HTML5, 'UTF-8');
+    $email = htmlentities(filter_input(INPUT_POST, 'email', FILTER_UNSAFE_RAW), ENT_QUOTES | ENT_HTML5, 'UTF-8');
+    $title = htmlentities(filter_input(INPUT_POST, 'title', FILTER_UNSAFE_RAW), ENT_QUOTES | ENT_HTML5, 'UTF-8');
+    $body = htmlentities(filter_input(INPUT_POST, 'body', FILTER_UNSAFE_RAW), ENT_QUOTES | ENT_HTML5, 'UTF-8');
 
-    
-
-    if (insertIntoDB($db, $name, $email, $title, $body)){
+    if (insertIntoDB($conn, $name, $email, $title, $body)){
         header('LOCATION: /personal_website/successful.php');
     }
 }
 
-function insertIntoDB($db, $name, $email, $title, $body){
-    $name = mysqli_real_escape_string($db, $name);
-    $email = mysqli_real_escape_string($db, $email);
-    $title = mysqli_real_escape_string($db, $title);
-    $body = mysqli_real_escape_string($db, $body);
+function insertIntoDB($conn, $name, $email, $title, $body){
+    try{
+        $name = mysqli_real_escape_string($conn, $name);
+        $email = mysqli_real_escape_string($conn, $email);
+        $title = mysqli_real_escape_string($conn, $title);
+        $body = mysqli_real_escape_string($conn, $body);
 
-    $sql = 'INSERT INTO Sender(name, email, title, body) VALUES(?, ?, ?, ?)';
+        $sql = 'INSERT INTO Sender(name, email, title, body) VALUES(?, ?, ?, ?)';
 
-    $stmt = $db->prepare($sql);
-    $stmt->bind_param("ssss", $name, $email, $title, $body);
-    $stmt->execute();
+        $stmt = $conn->prepare($sql);
+        $stmt->bind_param("ssss", $name, $email, $title, $body);
 
-    return true;
+        if($stmt->execute()){
+            return true;
+        }else{
+            throw new Exception();
+        }
+    }catch(Exception $err){
+        echo "Error: " . $err->getMessage();
+    }
 }
