@@ -3,8 +3,8 @@
 session_start();
 
 include '../config/database.php'; 
-$db = new Database();
-$conn = $db->connect();
+
+$conn = Database::connect();
 
 if($conn){
     echo "Connected";
