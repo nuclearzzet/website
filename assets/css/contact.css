@@ -1,5 +1,5 @@
 h1{
-    color: #111;
+    color: #fff;
 }
 .form_container{
     margin-top: 1.5em;
@@ -8,19 +8,18 @@ h1{
     align-items: center;
 }
 .inputs_container{
-    background-color: #fff;
-    padding: 3em 2em 3em 2em;
-    border: .3em solid #000;
+    background: linear-gradient(80deg, rgb(0, 2, 24), rgb(1, 1, 2));
+    padding: 3em 1em 3em 1em;
+    border: .3em solid #fff;
     border-radius: .8em;
-    box-shadow: 2em .5em .5em #111;
 }
 .form_input{
     border: 0;
-    background-color: #ddd;
-    border-bottom: 1.5px solid #000;
+    background-color: #fff;
+    border-bottom: 1.5px solid #fff;
 }
 .form_input:hover{
-    border-bottom: 3px solid #000;
+    border-bottom: 3px solid #fff;
 }
 .form_input, .form_input_submit{
     margin-top: 1em;
@@ -38,9 +37,8 @@ h1{
 }
 .submit_btn{
     padding: .6em 14.5em .6em 14.5em;
-    background-color: #111;
-    color: #fff;
+    background-color: #fff;
 }
 .submit_btn:hover{
-    background-color: #111;
+    background-color: #ffffff;
 }
