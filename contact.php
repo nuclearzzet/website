@@ -17,7 +17,7 @@
                     <br>
                     <input type="text" name="title" class="form_input form_input_3" placeholder="Enter your Title">
                     <br>
-                    <textarea name="body" cols="60" rows="8" class="form_input form_input_4" placeholder="Message"></textarea>
+                    <textarea name="body" cols="58" rows="7" class="form_input form_input_4" placeholder="Message"></textarea>
                     <br>
                     <input type="submit" value="submit" class="form_input_submit submit_btn">
                 <div>

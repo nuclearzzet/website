@@ -9,9 +9,8 @@
     <div class="application-main">
         <div class="flex-container">
             <div class="content-container">
-                <h1 class="title">Hi, I am nuclearzzet</h1>
-                <p class="description">An upcoming web and systems developer, who is passionate about programming, computers and technology</p>
-                <a href="about.php" class="about_btn"><button>About</button></a>
+                <h1 class="title">Hi, I am Niket Thomas John 👋</h1>
+                <p class="description">An upcoming web and systems developer. Who is passionate about technology</p>
             </div>
         </div>
     </div>

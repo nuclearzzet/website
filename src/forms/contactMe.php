@@ -16,8 +16,12 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST'){
     $title = htmlentities(filter_input(INPUT_POST, 'title', FILTER_UNSAFE_RAW), ENT_QUOTES | ENT_HTML5, 'UTF-8');
     $body = htmlentities(filter_input(INPUT_POST, 'body', FILTER_UNSAFE_RAW), ENT_QUOTES | ENT_HTML5, 'UTF-8');
 
-    if (insertIntoDB($conn, $name, $email, $title, $body)){
-        header('LOCATION: /personal_website/successful.php');
+    if (!empty($name) && !empty($email) && !empty($title) && !empty($body)){
+        if (insertIntoDB($conn, $name, $email, $title, $body)){
+            header('LOCATION: /personal_website/successful.php');
+        }
+    }else{
+        $message = "All fields are required";
     }
 }
 
