@@ -11,10 +11,10 @@ if($conn){
 }
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST'){
-    $name = htmlspecialchars(filter_input(INPUT_POST, 'name', FILTER_UNSAFE_RAW), ENT_QUOTES | ENT_HTML5, 'UTF-8');
-    $email = htmlentities(filter_input(INPUT_POST, 'email', FILTER_UNSAFE_RAW), ENT_QUOTES | ENT_HTML5, 'UTF-8');
-    $title = htmlentities(filter_input(INPUT_POST, 'title', FILTER_UNSAFE_RAW), ENT_QUOTES | ENT_HTML5, 'UTF-8');
-    $body = htmlentities(filter_input(INPUT_POST, 'body', FILTER_UNSAFE_RAW), ENT_QUOTES | ENT_HTML5, 'UTF-8');
+    $name = htmlspecialchars(filter_input(INPUT_POST, 'name', FILTER_UNSAFE_RAW), ENT_QUOTES);
+    $email = htmlentities(filter_input(INPUT_POST, 'email', FILTER_UNSAFE_RAW), ENT_QUOTES);
+    $title = htmlentities(filter_input(INPUT_POST, 'title', FILTER_UNSAFE_RAW), ENT_QUOTES);
+    $body = htmlentities(filter_input(INPUT_POST, 'body', FILTER_UNSAFE_RAW), ENT_QUOTES);
 
     if (!empty($name) && !empty($email) && !empty($title) && !empty($body)){
         if (insertIntoDB($conn, $name, $email, $title, $body)){
@@ -32,7 +32,7 @@ function insertIntoDB($conn, $name, $email, $title, $body){
         $title = mysqli_real_escape_string($conn, $title);
         $body = mysqli_real_escape_string($conn, $body);
 
-        $sql = 'INSERT INTO Sender(name, email, title, body) VALUES(?, ?, ?, ?)';
+        $sql = 'INSERT INTO contacts(name, email, title, message) VALUES(?, ?, ?, ?)';
 
         $stmt = $conn->prepare($sql);
         $stmt->bind_param("ssss", $name, $email, $title, $body);

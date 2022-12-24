@@ -8,7 +8,7 @@ h1{
     align-items: center;
 }
 .inputs_container{
-    background: linear-gradient(80deg, rgb(0, 2, 24), rgb(1, 1, 2));
+    background: rgb(22, 22, 22);
     padding: 3em 1em 3em 1em;
     border: .3em solid #fff;
     border-radius: .8em;
@@ -19,7 +19,7 @@ h1{
     border-bottom: 1.5px solid #fff;
 }
 .form_input:hover{
-    border-bottom: 3px solid #fff;
+    border-bottom: 3px solid rgb(5, 5, 5);
 }
 .form_input, .form_input_submit{
     margin-top: 1em;
@@ -40,5 +40,6 @@ h1{
     background-color: #fff;
 }
 .submit_btn:hover{
-    background-color: #ffffff;
+    background: rgb(22, 22, 22);
+    color: white;
 }

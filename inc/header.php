@@ -14,9 +14,9 @@
         <nav class="navbar">
             <ul class="navbar_list">
                 <li class="nav_link nav_link_1"><a href="index.php">nuclearzzet.dev</a></li>
-                <li class="nav_link nav_link_2"><a href="about.php">About</a></li>
-                <li class="nav_link nav_link_3"><a href="skills.php">Skills</a></li>
-                <li class="nav_link nav_link_4"><a href="projects.php">Projects</a></li>
+                <li class="nav_link nav_link_2"><a href="index.php#skills">Skills</a></li>
+                <li class="nav_link nav_link_3"><a href="index.php#projects">Projects</a></li>
+                <li class="nav_link nav_link_4"><a target="new" href="https://github.com/nuclearzzet">Github</a></li>
             </ul>
             <a href="./contact.php" class="btn_contact"><button>Contact</button></a>
         </nav>

@@ -6,7 +6,7 @@ class Database{
 
         $host = 'localhost';
         $user = 'personal_website';
-        $pass = 'personal_website*779';        
+        $pass = 'O2qat8uGu.O-5tiq';        
         $name = 'personal_website';
 
         $conn = new mysqli($host, $user, $pass, $name);
