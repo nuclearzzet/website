@@ -1,49 +1,66 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
 
 /* HTML ELEMENTS*/
-body{
+body {
     margin: 0;
     padding: 0;
-    background: rgb(212, 212, 212);
+    background: rgb(245, 245, 245);
 }
-h1, a, input, textarea, p, button, li, h2{
-    font-family: 'Montserrat', sans-serif;
+
+h1,
+a,
+input,
+textarea,
+p,
+button,
+li,
+h2 {
+    font-family: 'Lato', sans-serif;
     text-decoration: none;
 }
-p{
+
+p {
     color: white;
 }
+
 /* Navbar */
-.navbar{
+.navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: rgb(22, 22, 22);
     padding-top: 0.3em;
     padding-bottom: 0.3em;
-    position:sticky;
+    position: sticky;
 }
-.navbar_list{
+
+.navbar_list {
     display: flex;
     list-style: none;
     flex-wrap: wrap;
 }
-.nav_link_2, .nav_link_3, .nav_link_4{
+
+.nav_link_2,
+.nav_link_3,
+.nav_link_4 {
     padding-left: 4em;
 }
-.nav_link a{
+
+.nav_link a {
     font-size: 18px;
     color: #ffffff;
 }
-.nav_link a:hover{
+
+.nav_link a:hover {
     font-size: 20px;
     text-decoration: underline;
 }
-.btn_contact button{
+
+.btn_contact button {
     font-weight: 700;
     font-size: 15px;
     margin-right: 3.5em;
     background-color: #ffffff;
     border-radius: 30px;
-    padding: .6em 4em .6em 4em;
+    padding: .7em 3.5em .7em 3.5em;
 }

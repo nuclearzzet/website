@@ -11,10 +11,10 @@ if($conn){
 }
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST'){
-    $name = htmlspecialchars(filter_input(INPUT_POST, 'name', FILTER_UNSAFE_RAW), ENT_QUOTES);
-    $email = htmlentities(filter_input(INPUT_POST, 'email', FILTER_UNSAFE_RAW), ENT_QUOTES);
-    $title = htmlentities(filter_input(INPUT_POST, 'title', FILTER_UNSAFE_RAW), ENT_QUOTES);
-    $body = htmlentities(filter_input(INPUT_POST, 'body', FILTER_UNSAFE_RAW), ENT_QUOTES);
+    $name = htmlspecialchars(filter_input(INPUT_POST, 'name', FILTER_SANITIZE_SPECIAL_CHARS), ENT_QUOTES);
+    $email = htmlentities(filter_input(INPUT_POST, 'email', FILTER_SANITIZE_EMAIL), ENT_QUOTES);
+    $title = htmlentities(filter_input(INPUT_POST, 'title', FILTER_SANITIZE_SPECIAL_CHARS), ENT_QUOTES);
+    $body = htmlentities(filter_input(INPUT_POST, 'body', FILTER_SANITIZE_SPECIAL_CHARS), ENT_QUOTES);
 
     if (!empty($name) && !empty($email) && !empty($title) && !empty($body)){
         if (insertIntoDB($conn, $name, $email, $title, $body)){

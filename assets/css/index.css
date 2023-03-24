@@ -1,65 +1,51 @@
-.flex-container{
+.flex-container {
     display: flex;
     justify-content: flex-start;
     align-items: center;
 }
-.home-container{
+
+.home-container {
     margin: 12em 0em 0em 4em;
+    display: inline-block;
 }
-.title{
+
+.title {
     color: #000;
+    overflow: hidden;
+    white-space: nowrap;
+    width: 0;
+    animation: typing;
+    animation-duration: 2s;
+    animation-timing-function: steps(30, end);
+    animation-fill-mode: forwards;
 }
-.description{
+
+.description {
     color: #000;
+    overflow: hidden;
+    white-space: nowrap;
+    width: 0;
+    animation: typing;
+    animation-duration: 2s;
+    animation-timing-function: steps(30, end);
+    animation-fill-mode: forwards;
 }
 
-.about-container{
-    margin: 17em 0em 0em 4em;
+@keyframes typing {
+    from {
+        width: 0
+    }
+
+    to {
+        width: 100%
+    }
 }
 
-.about-me{
-    font-size: 1.2rem;
-    padding: 0em 15em 0em 0em;
-}
 
-.skills-container{
-    margin: 17em 0em 0em 4em;
-    justify-items: center;
-}
+.flex-container-1 {
 
-.skill-list{
-    display: block;
-    list-style: none;
-}
-
-.skill{
-    color: #000;
-    margin-top: 3em;
-}
-
-.projects-container{
-    margin: 17em 0em 0em 4em;
-}
-
-.project{
-    border: rgb(22, 22, 22) 3px solid;
-    border-radius: 10px;
-    margin: 4em 4em 4em 4em;
-    padding: 4em 2em 4em 2em;
-}
-
-.project-title{
-    text-align: top;
-}
-
-.project-description{
-    color: #222;
-}
-
-.project-repo{
-    color: #222;
-}
-
-.project-link{
-    color: #222;
+    border-radius: 34px;
+    margin: 17em 0em 0em 0em;
+    padding-bottom: 18em;
+    background-color: #222;
 }
